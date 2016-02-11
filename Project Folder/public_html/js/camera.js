@@ -1,7 +1,7 @@
 // Camera slideshow v1.4.0 - a jQuery slideshow with many effects, transitions, easy to customize, using canvas and mobile ready, based on jQuery 1.9.1+
 // Copyright (c) 2012 by Manuel Masia - www.pixedelic.com
 // Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
-;(function($){$.fn.camera = function(opts, callback) {
+(function($){$.fn.camera = function(opts, callback) {
 	
 	var defaults = {
 		alignment			: 'center', //topLeft, topCenter, topRight, centerLeft, center, centerRight, bottomLeft, bottomCenter, bottomRight
@@ -14,13 +14,13 @@
 		
 		barPosition			: 'bottom',	//'bottom', 'left', 'top', 'right'
 		
-		cols				: 6,
+		cols				: 8,
 		
 		easing				: 'easeInOutExpo',	//for the complete list http://jqueryui.com/demos/effect/easing.html
 		
 		mobileEasing		: '',	//leave empty if you want to display the same easing on mobile devices and on desktop etc.
 		
-		fx					: 'random',	//'random','simpleFade', 'curtainTopLeft', 'curtainTopRight', 'curtainBottomLeft', 'curtainBottomRight', 'curtainSliceLeft', 'curtainSliceRight', 'blindCurtainTopLeft', 'blindCurtainTopRight', 'blindCurtainBottomLeft', 'blindCurtainBottomRight', 'blindCurtainSliceBottom', 'blindCurtainSliceTop', 'stampede', 'mosaic', 'mosaicReverse', 'mosaicRandom', 'mosaicSpiral', 'mosaicSpiralReverse', 'topLeftBottomRight', 'bottomRightTopLeft', 'bottomLeftTopRight', 'bottomLeftTopRight'
+		fx					: 'mosaic',	//'random','simpleFade', 'curtainTopLeft', 'curtainTopRight', 'curtainBottomLeft', 'curtainBottomRight', 'curtainSliceLeft', 'curtainSliceRight', 'blindCurtainTopLeft', 'blindCurtainTopRight', 'blindCurtainBottomLeft', 'blindCurtainBottomRight', 'blindCurtainSliceBottom', 'blindCurtainSliceTop', 'stampede', 'mosaic', 'mosaicReverse', 'mosaicRandom', 'mosaicSpiral', 'mosaicSpiralReverse', 'topLeftBottomRight', 'bottomRightTopLeft', 'bottomLeftTopRight', 'bottomLeftTopRight'
 										//you can also use more than one effect, just separate them with commas: 'simpleFade, scrollRight, scrollBottom'
 
 		mobileFx			: '',	//leave empty if you want to display the same effect on mobile devices and on desktop etc.
@@ -33,13 +33,13 @@
 		
 		hover				: true,	//true, false. Puase on state hover. Not available for mobile devices
 				
-		loader				: 'pie',	//pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
+		loader				: 'none',	//pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
 		
 		loaderColor			: '#eeeeee', 
 		
 		loaderBgColor		: '#222222', 
 		
-		loaderOpacity		: .8,	//0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1
+		loaderOpacity		: 0,	//0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1
 		
 		loaderPadding		: 2,	//how many empty pixels you want to display between the loader and its background
 		
@@ -2248,7 +2248,7 @@
 
 })(jQuery);
 
-;(function($){$.fn.cameraStop = function() {
+(function($){$.fn.cameraStop = function() {
 	var wrap = $(this),
 		elem = $('.camera_src',wrap),
 		pieID = 'pie_'+wrap.index();
@@ -2268,7 +2268,7 @@
 }
 })(jQuery);
 
-;(function($){$.fn.cameraResume = function() {
+(function($){$.fn.cameraResume = function() {
 	var wrap = $(this);
 	var elem = $('.camera_src',wrap);
 	if(typeof autoAdv === 'undefined' || autoAdv!==true){
