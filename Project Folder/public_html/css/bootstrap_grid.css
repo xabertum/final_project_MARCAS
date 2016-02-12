@@ -1,6 +1,20 @@
-/**
-* @subsection   NORMALIZE  
-*/
+/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=4408358d2089491dd1cd)
+ * Config saved to config.json and https://gist.github.com/4408358d2089491dd1cd
+ */
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,49 +64,6 @@ table {
   border-spacing: 0;
 }
 
-button,
-input[type='button'] {
-  background: none;
-  border: none;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  outline-offset: 0;
-  overflow: visible;
-  cursor: pointer;
-  -webkit-appearance: none;
-}
-button::-moz-focus-inner,
-input[type='button']::-moz-focus-inner {
-  border: none;
-  padding: 0;
-}
-
-input[type='text'],
-input[type='time'],
-input[type='url'],
-input[type='month'],
-input[type='week'],
-input[type='email'],
-input[type='color'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='range'],
-input[type='search'],
-input[type='tel'],
-input[type='date'],
-input[type='password'],
-input[type='number'] {
-  outline: none;
-  background-color: transparent;
-  border: none;
-  -webkit-appearance: none;
-  border-radius: 0;
-  vertical-align: baseline;
-  box-shadow: none;
-}
-
 *,
 *:before,
 *:after {
@@ -102,7 +73,7 @@ input[type='number'] {
 }
 
 /**
-* @subsection   Grid system
+*   Grid system
 */
 .container {
   margin-right: auto;
@@ -621,5 +592,3 @@ input[type='number'] {
     margin-left: 100%;
   }
 }
-
-/*# sourceMappingURL=grid.css.map */

@@ -1,0 +1,107 @@
+/**
+* Superfish
+*
+* Superfish is an enhanced Suckerfish-style menu jQuery plugin.
+*
+* @author     Joel Birch
+* @link http://users.tpg.com.au/j_birch/plugins/superfish/
+* @license MIT license - http://opensource.org/licenses/MIT
+*/
+
+.sf-menu {
+  display: inline-block;
+}
+.sf-menu:before, .sf-menu:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.sf-menu:after {
+  clear: both;
+}
+.sf-menu > li {
+  position: relative;
+  float: left;
+}
+.sf-menu > li + li > a {
+  margin-left: -3px;
+}
+.sf-menu a {
+  display: block;
+  font-family: 'Paytone One', sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+.sf-menu > li > a {
+  line-height: 1.2;
+  padding: 35px 20px 38px;
+  border-bottom: 1px solid #9d8f8d;
+}
+@media (min-width: 1200px) {
+  .sf-menu > li > a {
+    padding: 60px 32px 45px;
+  }
+}
+
+.sf-menu > li.active > a, .sf-menu > li.sfHover > a,
+.sf-menu > li > a:hover {
+  background: rgba(197, 37, 109, 0.6);
+}
+
+.sf-menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 120px;
+  padding: 20px 0;
+  background: #fff;
+  z-index: 2;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.sf-menu ul li {
+  position: relative;
+}
+.sf-menu ul a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 2.71429;
+  color: #333333;
+}
+.sf-menu ul a:hover {
+  color: #c5256d;
+}
+
+.sf-menu ul ul {
+  position: absolute;
+  min-width: 120px;
+  top: 17px;
+  left: 100%;
+  background: #fff;
+  width: auto;
+  margin-top: 0;
+  padding: 20px 0;
+  z-index: 4;
+  border: 1px solid #c5256d;
+}
+
+.sf-menu > li > .sf-with-ul {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .sf-menu ul,
+  .sf-menu ul ul {
+    box-shadow: none;
+    background: #fff;
+  }
+}
+@media (max-width: 767px) {
+  .sf-menu {
+    display: none;
+  }
+}
+
+
